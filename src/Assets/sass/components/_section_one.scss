@@ -1,0 +1,33 @@
+.container {
+
+    margin-inline: auto;
+    
+    @include for-xs {
+        width: 400px;
+    }
+    @include for-sm {
+        width: 540px;
+    }
+    @include for-md {
+        width: 720px;
+    }
+    @include for-l {
+        width: 960px;
+    }
+    @include for-xl {
+        width: 1140px;
+    }
+    @include for-xxl {
+        width: 1400px;
+    }
+}
+
+.section-one, .team-container, .section-review {
+    margin-block: 3em;
+    @include for-l {
+        display: flex; 
+        justify-content: space-between;
+        margin-block: 5em;
+    }
+
+}

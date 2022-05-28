@@ -1,0 +1,27 @@
+.btn {
+    padding: 1.5rem 3rem ;
+    border-radius:var(--border-radius);
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+
+    &-primary {
+        background: var(--primary);
+        color: var(--light);
+    }
+
+    &-secondary {
+        background: var(--secondary);
+        color: var(--light);
+    }
+    &-light {
+        background: var(--light);
+        color: var(--secondary);
+    }
+
+    &:focus, &:hover {
+        background: var(--secondary);
+        color: var(--light);
+        }
+}
+

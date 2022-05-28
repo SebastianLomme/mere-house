@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,800&display=swap');
+
+
+@import "sass/utilities/variables";
+@import "sass/utilities/mixins";
+
+@import "sass/base/reset";
+@import "sass/base/typography";
+
+@import "sass/components/heading";
+@import "sass/components/card";
+@import "sass/components/button";
+@import "sass/components/section_one";
+@import "sass/components/section_two";
+@import "sass/components/meet_the_team";
+@import "sass/components/special_places";
+@import "sass/components/section_reviews";
+@import "sass/components/footer";
+@import "sass/components/pop-up";
+
+body {
+    background: var(--bg-color);
+    line-height: 1.25;
+}
+

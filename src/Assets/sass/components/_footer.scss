@@ -1,0 +1,40 @@
+.footer-container {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+
+    .footer-main-section {
+
+        @include for-l {
+            display: flex;
+        }
+
+        margin-block: 3em;
+    
+        h5 {
+            margin-block: 2em;
+            border-bottom: 4px solid black;
+            width: fit-content;
+        }
+    
+        > div {
+            flex: 1;
+            a {
+                display: block;
+                width: fit-content;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+    
+    .footer-copy-right {
+        background-color: var(--primary);
+        text-align: center;
+        width: 100%;
+        padding-block: .5em;
+        color: var(--light);
+    
+        p {
+            opacity: 0.8;
+        }
+    }
+}
+

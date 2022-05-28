@@ -1,0 +1,19 @@
+.review-container {
+    margin-block: 3em;
+    h3 {
+        text-align: center;
+    }
+    .card {
+        &-title {
+            order: 0;
+        }
+        .circle {
+            order: 1;
+            height: 75px;
+
+        }
+        &-content {
+            order: 2;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.card {
+    background-color: var(--light);
+    min-height:500px;
+    margin: 1.5em;
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+    &-body {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    text-align: center;
+
+    h3 {
+        font-size: 24px;
+        margin-block: 1em;
+    }
+    .circle {
+        // border-radius: 50%;
+        height:175px;
+        width:175px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        // margin-block: 5em;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        fill: #fff;
+
+    }
+}
+    &:nth-child(1) {
+
+        @include for-l {
+            transform: translateY(10%);
+        }
+        
+        flex: 1;
+        
+    }
+    
+    &:nth-child(2) {
+        @include for-l {
+            transform: translateY(-10%);
+        }
+
+        flex: 1;
+
+    }
+    
+    &:nth-child(3) {
+        @include for-l {
+            transform: translateY(5%);
+        }
+
+        flex: 1;
+
+    }
+}
+

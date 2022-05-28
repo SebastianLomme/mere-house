@@ -1,0 +1,31 @@
+.section-two {
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--light);
+
+    .content {
+        width: 90%;
+        margin-inline: auto;
+        padding-block: 3em;
+
+        h3 {
+            margin-bottom: 1.5em;
+        }
+
+        @include for-md {
+            max-width: 1000px;
+            padding-block: 5em;
+
+        }
+        p {
+            margin-block: 1em;
+        }
+
+        > p > span {
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+}
+

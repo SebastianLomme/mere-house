@@ -1,0 +1,75 @@
+.App-header {
+    overflow: hidden;
+    position: relative;
+
+    .hero-section {
+        color: var(--light);
+        background: var(--primary);
+        position: relative;
+
+        .circle {
+            background: var(--transparent);
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &-one {
+                width: 15vw;
+                height: 15vw;
+            }
+            &-two {
+                width: 25vw;
+                height: 25vw;
+            }
+            &-three {
+                width: 35vw;
+                height: 35vw;
+            }
+            &-four {
+                width: 45vw;
+                height: 45vw;
+            }
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .btn {
+                margin-top: 7em;
+            }
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+
+            > * {
+                z-index: 1;
+            }
+
+            p {
+                width: 70%;
+            }
+
+        }
+
+    }
+    .hero-bottom {
+        width: 100%; 
+        border-top: 1px solid;
+        border-color: var(--primary);
+    }
+    .hero-image-three {
+        position: absolute;
+        height: 120%;
+        right: 0;
+        bottom: 0;      
+        object-fit: cover;
+        right:-20vw;
+        overflow: hidden;
+    }
+}
